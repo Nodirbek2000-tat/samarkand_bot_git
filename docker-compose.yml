@@ -1,0 +1,23 @@
+# Telegram bot (aiogram 2).
+# Serverda (shu papkada):  docker compose up -d --build
+# Backend bilan umumiy "mentadbirkor" Docker tarmog‘i orqali gaplashadi (http://backend:8000/api).
+
+name: mentadbirkor-bot
+
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      API_URL: http://backend:8000/api
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  default:
+    name: mentadbirkor
+    external: true

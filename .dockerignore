@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.idea/
+.git/
+Pipfile
+Pipfile.lock
+docker-compose.yml
+server.env.example
+DEPLOY.md
