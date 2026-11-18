@@ -6,8 +6,8 @@ Tartib: **1. backend → 2. frontend → 3. bot**. Backend ishlab turgan bo‘li
 ## 1. O‘rnatish
 
 ```bash
-git clone https://github.com/Nodirbek2000-tat/samarkand_bot_git.git /opt/mentadbirkor/bot
-cd /opt/mentadbirkor/bot
+git clone https://github.com/Nodirbek2000-tat/samarkand_bot_git.git /opt/sambizsupport/samarkand_bot_git
+cd /opt/sambizsupport/samarkand_bot_git
 cp server.env.example .env
 nano .env        # BOT_TOKEN, ADMINS, backend dagi bilan bir xil BOT_API_SECRET
 docker compose up -d --build
@@ -28,7 +28,7 @@ Saytdagi admin panel bosh sahifasida «Telegram bot — Ishlayapti» ko‘rinish
 ## 3. Yangilash
 
 ```bash
-cd /opt/mentadbirkor/bot
+cd /opt/sambizsupport/samarkand_bot_git
 git pull
 docker compose up -d --build
 ```
